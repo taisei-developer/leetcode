@@ -7,7 +7,7 @@ Every subsequent time it is called, it should return undefined.
 
 */
 
-var once = function (fn) {
+var once = function (fn) { // fn という関数を受け取る
   let called = false;
   return function (...args) {
     if (!called) {
